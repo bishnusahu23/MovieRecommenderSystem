@@ -5,7 +5,7 @@ import requests
 import gdown
 
 try:
-    with open(r"Formatted_movies.pkl",'rb') as file:
+    with open("Formatted_movies.pkl",'rb') as file:
         movies=pickle.load(file)
 
     file_id = "1reqRIPB3oatkqCqzk5XpK13m88mq9jBE"  # Extract from the link
