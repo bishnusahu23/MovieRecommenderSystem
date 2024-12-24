@@ -5,13 +5,9 @@ import requests
 import gdown
 
 try:
-    with open("Formatted_movies.pkl",'rb') as file:
+    with open(r"C:\Users\sahub\Desktop\Folders\Movie_recommendor_system\Formatted_movies.pkl",'rb') as file:
         movies=pickle.load(file)
-
-    file_id = "1reqRIPB3oatkqCqzk5XpK13m88mq9jBE"  # Extract from the link
-    output = "similarity.pkl"
-    gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
-    with open(output,'rb') as file:
+    with open(r"C:\Users\sahub\Desktop\Folders\Movie_recommendor_system\cosine_similarity.pkl",'rb') as file:
         similarity=pickle.load(file)
 except Exception as e:
     st.write(f"Error loading data: {e}")
