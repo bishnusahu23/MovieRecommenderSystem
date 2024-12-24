@@ -11,3 +11,4 @@ openpyxl
 wordcloud
 scipy
 streamlit
+gdown
