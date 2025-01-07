@@ -5,7 +5,7 @@ import requests
 import gdown
 import gzip
 
-# Load Movies and Cosine Similarity from Google Drive
+
 try:
     with open("Formatted_movies.pkl", 'rb') as file:
         movies = pickle.load(file)
