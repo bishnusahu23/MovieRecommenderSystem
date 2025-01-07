@@ -11,7 +11,7 @@ try:
         movies = pickle.load(file)
 
     # Google Drive file ID extracted
-    file_url = "https://drive.google.com/uc?export=download&id=1reqRIPB3oatkqCqzk5XpK13m88mq9jBE"
+    file_url = "https://drive.google.com/uc?export=download&id=1DseFoqOxPoXOPKGMqH18s_P_dSQQJwYd"
     
     # Download the file using gdown
     gdown.download(file_url, 'cosine_similarity.pkl', quiet=False)
@@ -22,6 +22,8 @@ try:
 
 except Exception as e:
     st.write(f"Error loading data: {e}")
+
+
 
 # Streamlit Title
 st.title("Movie Recommender System")
