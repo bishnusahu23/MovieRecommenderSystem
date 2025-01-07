@@ -61,7 +61,7 @@ def recommend(name, count):
 if st.button('Recommend'):
     recommended_movies, posters = recommend(choice, num)
     if recommended_movies:
-        cols = st.columns(5)  # Adjust the number of columns based on your layout preference
+        cols = st.columns(5)  
         for index, (name, poster) in enumerate(zip(recommended_movies, posters)):
             with cols[index % 5]:  # This will wrap the items after every 5 movies
                 st.write(name)
